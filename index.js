@@ -12,5 +12,7 @@ const port = 2003;
 app.listen(port, () => {
     console.log("Server listening on :", port);
 })
-
+app.get("/", (req, res) => {
+    res.send("Welcome at CRUD!");
+});
 app.use('/api', router)
