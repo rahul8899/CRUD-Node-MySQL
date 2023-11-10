@@ -1,4 +1,4 @@
-const { DataTypes, INTEGER } = require('sequelize')
+const { DataTypes } = require('sequelize')
 const sequelize = require('./db');
 const Marks = require('./marks');
 
@@ -26,6 +26,6 @@ const Student = sequelize.define('student', {
     tableName: 'student',
     timestamps: false
 });
-Student.hasOne(Marks, { foreignKey: 'stud_id' });
+// Student.hasOne(Marks, { foreignKey: 'stud_id' });
 
 module.exports = Student;

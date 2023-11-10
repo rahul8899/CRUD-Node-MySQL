@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt');
+const Student = require('../models/student')
 
 const createStudent = async (req, res) => {
     try {
